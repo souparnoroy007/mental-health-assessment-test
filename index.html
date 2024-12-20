@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Assessment Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Assessment Chatbot</h1>
+        <div class="chat-box" id="chat-box" aria-live="polite">
+            <div class="bot-message">
+                <p>Welcome! Let's begin your mental health assessment. Please answer the following questions with 'yes' or 'no'.</p>
+            </div>
+        </div>
+        <div id="question-container">
+            <p id="question"></p>
+            <div class="button-group">
+                <button id="yes-button" onclick="answerQuestion('yes')">Yes</button>
+                <button id="no-button" onclick="answerQuestion('no')">No</button>
+            </div>
+        </div>
+        <div id="result-container">
+            <p id="result"></p>
+            <p id="suggestion"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
